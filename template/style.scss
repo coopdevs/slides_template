@@ -90,6 +90,9 @@ blockquote {
   text-align: center;
   &, h1, h2 { color: $text-light; }
   h1 { font-size: $font-size-impact; }
+  h2 {
+    font-size: 5rem;
+  }
 }
 
 .full {
