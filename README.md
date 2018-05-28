@@ -5,6 +5,8 @@ Basically, a bunch of modified Sass from the starter theme Backslide comes with.
 
 ![](template.png)
 
+Check out the [demo](presentation.html).
+
 ## Installation
 
 Just clone this repo in your machine running
