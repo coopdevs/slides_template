@@ -3,6 +3,8 @@
 This a template for [Backslide](https://github.com/sinedied/backslide).
 Basically, a bunch of modified Sass from the starter theme Backslide comes with.
 
+![](template.png)
+
 ## Installation
 
 Just clone this repo in your machine running
