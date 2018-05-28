@@ -5,7 +5,7 @@ Basically, a bunch of modified Sass from the starter theme Backslide comes with.
 
 ![](template.png)
 
-Check out the [demo](presentation.html).
+Check out the [demo](http://coopdevs.org/slides_template).
 
 ## Installation
 
