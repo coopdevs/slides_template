@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700,900');
 
 // Theme
 // ---------------------------------------------------------------------------
@@ -21,6 +21,8 @@ $margin           : 20px;
 $iframe-scale     : 1.5;
 
 $font-light       : 300;
+$font-bold        : 700;
+$font-heavy       : 900;
 
 
 // CSS Base
@@ -92,11 +94,12 @@ blockquote {
   background-color: $primary;
   vertical-align: middle;
   text-align: center;
-  &, h1, h2 { color: $text-light; }
-  h1 { font-size: $font-size-impact; }
-  h2 {
-    font-size: 5rem;
+  &, h1, h2 {
+    color: $text-light;
   }
+  h1, h2 { font-weight: $font-heavy; }
+  h1 { font-size: $font-size-impact; }
+  h2 { font-size: 5rem; }
 }
 
 .full {
