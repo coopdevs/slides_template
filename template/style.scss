@@ -72,6 +72,10 @@ blockquote {
   color: $text-light;
   background-size: cover;
   background-color: $primary;
+
+  img {
+     max-width: 100%;
+  }
 }
 
 .remark-slide-number {
