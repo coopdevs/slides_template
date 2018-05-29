@@ -36,7 +36,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 $margin 0;
   font-family: $font-title;
-  font-weight: 700;
+  font-weight: $font-bold;
 }
 h1 { color: $light; }
 h2 { color: $light; }
@@ -166,6 +166,7 @@ blockquote {
 .alt { color: $secondary; };
 .em { color: $tertiary; };
 .thin { font-weight: 200; }
+.bold { font-weight: $font-bold; }
 .huge { font-size: 2em; }
 .big { font-size: 1.5em; }
 .small { font-size: .8em; }
