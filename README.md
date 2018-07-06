@@ -12,7 +12,7 @@ Check out the [demo](http://coopdevs.org/slides_template).
 Just clone this repo in your machine running
 
 ```sh
-$ git@github.com:coopdevs/slides_template.git
+$ git clone git@github.com:coopdevs/slides_template.git
 ```
 
 ## Usage
