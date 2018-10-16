@@ -1,0 +1,19 @@
+{
+  "name": "slides_template",
+  "version": "1.0.0",
+  "description": "Templates for slides done at Coopdevs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coopdevs/slides_template.git"
+  },
+  "keywords": [
+    "Backslide",
+    "templates"
+  ],
+  "author": "Coopdevs",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/coopdevs/slides_template/issues"
+  },
+  "homepage": "https://github.com/coopdevs/slides_template#readme"
+}
