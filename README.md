@@ -5,14 +5,23 @@ Basically, a bunch of modified Sass from the starter theme Backslide comes with.
 
 ![](template.png)
 
-Check out the [demo](http://coopdevs.org/slides_template).
+Check out a [demo](http://coopdevs.org/assemblea_katuma_30_05_2018/).
+
+## Requirements
+
+* npm >= 5.2.0
+
+Check [npm installation](https://www.npmjs.com/get-npm) instructions if you don't have it yet.
 
 ## Installation
 
-Just clone this repo in your machine running
+First, ensure your presentation project has a `package.json`. You can create one
+running `npm init`. This will walk you through the process step by step.
+
+Then, add the `slides_template` dependency doing
 
 ```sh
-$ git clone git@github.com:coopdevs/slides_template.git
+$ npm install slides_template --save
 ```
 
 ## Usage
@@ -21,11 +30,21 @@ You need to provide the `--template` argument when initializing a new
 presentation as follows:
 
 ```sh
-$ bs init --template <path_to_this_template>
+$ npx bs init --template node_modules/slides_template/template/
 ```
 
-Note path_to_this_template must point to the `/template` folder. There is where
-the template files Backslide expects to read live. 
+This will create a `presentation.md` file where you can edit your slides.
 
-Check out [Backslide's docs](https://github.com/sinedied/backslide#usage) for
-more details.
+Then, watch the resulting presentation live-reload while you work on it by running:
+
+```sh
+$ npx bs server
+```
+
+Once finished, you can export them to PDF with the following command:
+
+```sh
+$ npx bs export
+```
+
+Check out [Backslide's docs](https://github.com/sinedied/backslide#usage) for more details.
