@@ -18,10 +18,10 @@ Check [npm installation](https://www.npmjs.com/get-npm) instructions if you don'
 First, ensure your presentation project has a `package.json`. You can create one
 running `npm init`. This will walk you through the process step by step.
 
-Then, add the `slides_template` dependency doing
+Then, add the `backslide` and `slides_template` dependencies doing
 
 ```sh
-$ npm install slides_template --save
+$ npm install backslide slides_template --save
 ```
 
 ## Usage
