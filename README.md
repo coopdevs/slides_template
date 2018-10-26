@@ -44,7 +44,7 @@ $ npx bs serve
 Once finished, you can export them to PDF with the following command:
 
 ```sh
-$ npx bs export
+$ npx bs pdf
 ```
 
 Check out [Backslide's docs](https://github.com/sinedied/backslide#usage) for more details.
