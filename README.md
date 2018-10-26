@@ -38,7 +38,7 @@ This will create a `presentation.md` file where you can edit your slides.
 Then, watch the resulting presentation live-reload while you work on it by running:
 
 ```sh
-$ npx bs server
+$ npx bs serve
 ```
 
 Once finished, you can export them to PDF with the following command:
