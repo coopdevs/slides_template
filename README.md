@@ -48,3 +48,13 @@ $ npx bs pdf
 ```
 
 Check out [Backslide's docs](https://github.com/sinedied/backslide#usage) for more details.
+
+## Troubleshooting
+
+Sometimes you might get the following error when running `npx bs init` as described above.
+
+```
+ENOENT: no such file or directory, scandir '/home/pau/dev/OFN_sobtec_2019/node_modules/node-sass/vendor'
+```
+
+Running `npm rebuild node-sass` fixes it.
