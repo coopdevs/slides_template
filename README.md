@@ -9,7 +9,7 @@ Check out a [demo](http://coopdevs.org/assemblea_katuma_30_05_2018/).
 
 ## Requirements
 
-* npm >= 5.2.0
+* npm >= 8.11
 
 Check [npm installation](https://www.npmjs.com/get-npm) instructions if you don't have it yet.
 
@@ -58,3 +58,26 @@ ENOENT: no such file or directory, scandir '/home/pau/dev/OFN_sobtec_2019/node_m
 ```
 
 Running `npm rebuild node-sass` fixes it.
+
+### Failure installing puppeteer
+
+If you see the following failure when installing dependencies
+
+```
+npm WARN optional Skipping failed optional dependency /chokidar/fsevents:
+npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.2.8
+npm WARN katuma_ofn_information_systems_talk@1.0.0 No repository field.
+npm ERR! Linux 4.15.0-47-generic
+npm ERR! argv "/home/pau/.nodenv/versions/5.12.0/bin/node" "/home/pau/.nodenv/versions/5.12.0/bin/npm" "install" "backslide" "slides_template" "--save"
+npm ERR! node v5.12.0
+npm ERR! npm  v3.8.6
+npm ERR! code ELIFECYCLE
+
+npm ERR! puppeteer@1.12.2 install: `node install.js`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the puppeteer@1.12.2 install script 'node install.js'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+```
+
+it is because you are using and old version of node. Install at least node 8.11 and try again.
