@@ -49,6 +49,12 @@ $ npx bs pdf
 
 Check out [Backslide's docs](https://github.com/sinedied/backslide#usage) for more details.
 
+## Themes
+
+To choose a different theme, fetch all branches and switch to a theme branch. So far, there is only `green-theme` and `master`, which implements the blue theme shown at the top of this file.
+
+While we don't find a better mechanism to handle themes, theme branches need to be kept up to date with changes in `master`, which means that they'll need to be rebased onto `master` as soon as changes happen.
+
 ## Troubleshooting
 
 Sometimes you might get the following error when running `npx bs init` as described above.
