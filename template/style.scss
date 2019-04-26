@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,800');
 
 // Theme
 // ---------------------------------------------------------------------------
 
-$primary          : #3A407A;
+$primary          : #27ab83;
 $secondary        : #009688;
-$tertiary         : #757575;
-$light            : #FFF;
+$tertiary         : #999999;
+$light            : #effcf6;
 $dark             : #333;
 $text-dark        : #212121; 
 $text-light       : $light;
 $code-background  : #F8F8F8;
 $overlay          : transparentize(#000, .5);
-$font-size        : 28px;
-$font-size-impact : 128px;
+$font-size        : 32px;
+$font-size-impact : 6rem;
 $font             : 'Fira Sans', sans-serif;
 $font-title       : $font;
 $font-fixed       : 'Lucida Console', Monaco, monospace;
@@ -21,8 +21,10 @@ $margin           : 20px;
 $iframe-scale     : 1.5;
 
 $font-light       : 300;
+$font-regular     : 400;
+$font-medium      : 500;
 $font-bold        : 700;
-$font-heavy       : 900;
+$font-heavy       : 800;
 
 
 // CSS Base
@@ -38,9 +40,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-title;
   font-weight: $font-bold;
 }
-h1 { color: $light; }
-h2 { color: $light; }
-h3 { color: $light; }
 li { margin-bottom: .25em; };
 pre, code {
   text-align: left;
@@ -69,11 +68,19 @@ blockquote {
 .remark-notes { font-size: 1.5em; }
 
 .remark-slide-content {
-  font-size: $font-size;
-  padding: 2em;
-  color: $text-light;
+  color: $text-dark;
   background-size: cover;
-  background-color: $primary;
+  vertical-align: middle;
+  text-align: center;
+
+  h2 {
+     font-size: 4rem;
+  }
+
+  p {
+     font-size: 3rem;
+     font-weight: $font-medium;
+  }
 
   img {
      max-width: 100%;
@@ -99,7 +106,10 @@ blockquote {
   }
   h1, h2 { font-weight: $font-heavy; }
   h1 { font-size: $font-size-impact; }
-  h2 { font-size: 5rem; }
+  h2 {
+     font-weight: $font-regular;
+     font-size: 3rem;
+  }
 }
 
 .full {
@@ -111,6 +121,11 @@ blockquote {
     transform-origin: 0 0;
     border: 0;
   }
+}
+
+.header {
+   background-color: $primary;
+   color: $light;
 }
 
 .bottom-bar {
@@ -165,13 +180,19 @@ blockquote {
 .primary { color: $primary; }
 .alt { color: $secondary; };
 .em { color: $tertiary; };
-.thin { font-weight: 200; }
+.thin { font-weight: $font-regular; }
 .bold { font-weight: $font-bold; }
 .huge { font-size: 2em; }
 .big { font-size: 1.5em; }
 .small { font-size: .8em; }
+.x-small { font-size: .7em; }
 .dark-bg { background-color: $dark; }
 .alt-bg { background-color: $secondary; };
+.light { color: $light; }
+.alt-light { color: #8eedc7; }
+.text-shadow {
+   text-shadow: 0px 1px 10px rgba(0,0,0,0.7);
+}
 
 // Simple 12-columns grid system
 .row {
