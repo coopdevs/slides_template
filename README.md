@@ -41,6 +41,8 @@ Then, watch the resulting presentation live-reload while you work on it by runni
 $ npx bs serve
 ```
 
+### Exporting to PDF
+
 Once finished, you can export them to PDF with the following command:
 
 ```sh
@@ -48,6 +50,22 @@ $ npx bs pdf
 ```
 
 Check out [Backslide's docs](https://github.com/sinedied/backslide#usage) for more details.
+
+Then, it is highly recommended to compress the resulting file as it tends to be large. You can do so with [Ghostscript](https://www.ghostscript.com/).
+
+To use a rather agressive settings with a high compression rate and thus small file size run:
+
+```sh
+ghostscript -sDEVICE=pdfwrite -dPDFSETTINGS=/screen -o pdf/compressed.pdf pdf/presentation.pdf
+```
+
+If your presentation can't afford compressing images too much with its resulting loss in quaility, like detailed diagrams you can instead run:
+
+```sh
+ghostscript -sDEVICE=pdfwrite -dPDFSETTINGS=/default -o pdf/compressed.pdf pdf/presentation.pdf
+```
+
+Note `compressed.pdf` is the output file while `presentation.pdf` is the source.
 
 ## Themes
 
